@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "rollup -c",
-    "dev": "rollup -c -w",   
+    "dev": "rollup -c -w",
     "start": "sirv public"
   },
   "devDependencies": {
@@ -16,8 +16,10 @@
     "svelte": "^3.0.0"
   },
   "dependencies": {
+    "@apollo/client": "^3.2.1",
     "axios": "^0.19.2",
     "sirv-cli": "^0.4.4",
+    "svelte-apollo": "^0.3.0",
     "svelte-routing": "^1.4.2"
   }
 }

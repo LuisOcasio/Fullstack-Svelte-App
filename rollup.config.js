@@ -22,6 +22,10 @@ export default {
     'dotenv',
     'colors',
     'body-parser',
+    'graphql',
+    '@apollo/client',
+    'mongoose',
+    'regenerator-runtime'
   ],
 
   plugins: [

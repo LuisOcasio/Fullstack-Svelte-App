@@ -7,7 +7,7 @@
     "start": "node bundle.server.js",
     "build": "NODE_ENV=production rollup -c",
     "dev": "rollup -c -w",
-    "app": "(cd client && npm run dev) & npm run dev"
+    "app": "(cd client && npm run dev && cd db && node db.js) & npm run dev"
   },
   "keywords": [],
   "author": "",
@@ -32,7 +32,6 @@
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^9.0.0",
     "@rollup/plugin-run": "^2.0.2",
-    "concurrently": "^5.3.0",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-node-polyfills": "^0.2.1"
   }

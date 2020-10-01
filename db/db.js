@@ -2,7 +2,7 @@
 import mongoose from 'mongoose'
 
 //will resolve deprecated warnings
-export const connectDB = async () => {
+const connectDB = async () => {
   const conn = await mongoose.connect(process.env.MONGODB_URL, {
     useNewUrlParser: true,
     useCreateIndex: true,
@@ -15,3 +15,4 @@ export const connectDB = async () => {
   )
 }
 
+export default connectDB
